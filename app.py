@@ -349,3 +349,6 @@ def delete():
         blogname_data = cur.fetchall()
         blogname = blogname_data[0][1]
         return render_template("delete.html", blogname=blogname, blog_data=blog_data)
+
+if __name__ == '__main__':
+    app.run(debug=True)
